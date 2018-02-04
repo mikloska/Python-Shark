@@ -1,11 +1,11 @@
 import random
-sharks= ["lsurus oxyrincus","Sphyrnidae","Galeocerdo cuvier", "Carcharhinus leucas","Carcharodon carcharias"] # Mako, hammerhead, tiger, bull, great white
+sharks= ["Lsurus oxyrincus","Sphyrnidae","Galeocerdo cuvier", "Carcharhinus leucas","Carcharodon carcharias"] # Mako, hammerhead, tiger, bull, great white
 shark_layman= ["Mako","Hammerhead","Tiger","Bull","Great White"]
 random_shark= random.randint(0,4)
 word= sharks[random_shark]
 def shark():
     innocent_dude= [
-    " 0  ", 
+    " 0  ",
     "\|/ ",
     "/ \ "]
     def innocent_dude_function():
@@ -15,9 +15,9 @@ def shark():
 
     wrong=0 # keeps count of wrong words
     incorrect_guesses= [] # displays incorrect character guesses and displays te for player
-    levels= ["","   ________/\          ","  /O\  }}}   \_______/|","<<_______    ________ |","         \  /        \|","          \/","",]
+    levels= [" ","   ________/\          ","  /O\  }}}   \_______/|","<<_______    ________ |","         \  /        \|","          \/"," "]
 # draws character hangman style as part of list w/indexable variables
-    letters= list(word) # creates list of characters in word
+    letters= list(word.lower()) # creates list of characters in word
     spaces= ["__"] * len(word) # creates list with line per character of word
     win= False # used to check i player has won
     print ("Guess the correct letters to spell out a shark species' name.\nIf you guess incorrectly, the poor innocent \nswimmer dude will be eaten and it'll all be your fault.")

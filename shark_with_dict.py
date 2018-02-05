@@ -5,7 +5,6 @@ sharks_dict= {"Lsurus oxyrincus": "Mako","Sphyrnidae":"Hammerhead",
 sharks_keys_list=list(sharks_dict.keys())
 random_shark= random.randint(0,4)
 word=sharks_keys_list[random_shark]
-
 sharks_keys_list[random_shark]
 def shark():
     innocent_dude= [

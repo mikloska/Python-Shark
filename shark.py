@@ -37,7 +37,7 @@ swimmer dude will be eaten and it'll all be your fault.""")
             letter_index = letters.index(answer)
             spaces[letter_index] = answer
             letters[letter_index] = '$'
-            if answer in letters: # second if statement ensures all instances o correct guess are filled in
+            if answer in letters: # second if statement ensures all instances of correct guess are filled in
                 letter_index=letters.index(answer)
                 spaces[letter_index]=answer
         else:
@@ -53,8 +53,7 @@ swimmer dude will be eaten and it'll all be your fault.""")
                break
     if not win:
         print ('\n'.join(levels[0: wrong]))
-        print ("Game over! The word was '{}' you dummy".format(word))
-        #shark_name=sharks_keys_list.index(word) This line has no purpouse and there was no need for this variable
+        print ("\nGame over! The word was '{}' you dummy".format(word))
         shark_easy=sharks_dict[word]
         print ("""Everybody knows that %s is the scientific name for %s.
 Our innocent swimmer dude was eaten because of your icompetence!

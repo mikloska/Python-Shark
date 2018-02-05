@@ -52,4 +52,3 @@ def shark():
         print ("Everybody knows that %s is the scientific name for %s.\nOur innocent swimmer dude was eaten because of your icompetence!\nIt's all on you. I hope you're happy." % (word,shark_easy))
 
 shark()
-        
